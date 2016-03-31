@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="179dp"
+        android:text="Introduzca las mesas"
+        android:id="@+id/TituloMesa"
+        android:layout_gravity="center_horizontal"
+        android:textSize="50sp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/BnMesas"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:layout_weight="0.24">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/EtiquetaAvisoMesa"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:text="Nombre Mesa:" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/EtNombreMesa"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:hint="Nombre" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="327dp"
+        android:layout_height="88dp"
+        android:text="Añadir Mesa"
+        android:id="@+id/BnAnadirMesa"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp" />
+</LinearLayout>
